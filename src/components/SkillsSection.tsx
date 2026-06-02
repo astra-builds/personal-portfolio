@@ -4,10 +4,11 @@ import { useScrollActivation } from "@/hooks/useScrollActivation";
 
 const skillCategories = [
   {
-    label: "CORE_LANGUAGES",
+    label: "CORE_LANGUAGES_&_DATA",
     skills: [
       { name: "Python", level: 92 },
       { name: "SQL", level: 85 },
+      { name: "PostgreSQL", level: 75 },
     ],
   },
   {
@@ -16,13 +17,15 @@ const skillCategories = [
       { name: "LangChain", level: 82 },
       { name: "Crew AI", level: 78 },
       { name: "n8n", level: 75 },
+      { name: "Hugging Face", level: 72 },
     ],
   },
   {
-    label: "DATA_ANALYTICS",
+    label: "DATA_ANALYTICS_&_DEPLOY",
     skills: [
       { name: "Pandas", level: 88 },
       { name: "Power BI", level: 85 },
+      { name: "Streamlit", level: 78 },
     ],
   },
   {
@@ -48,7 +51,7 @@ const SkillsSection = () => {
             <div className="h-[1px] flex-grow bg-primary/20" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skillCategories.map((cat, i) => (
               <div key={cat.label} className="sa-card border border-primary/20 bg-card/50 p-4 space-y-4">
                 <div className="text-[10px] text-primary tracking-widest font-bold border-b border-primary/20 pb-2">

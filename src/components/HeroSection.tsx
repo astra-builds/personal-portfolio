@@ -54,7 +54,7 @@ const HeroSection = () => {
                 <p>&gt; INITIALIZING_NEURAL_LINK... SUCCESS</p>
                 <p>&gt; AGE: 20 // LOCATION: DHAKA, BD</p>
                 <p>&gt; EDUCATION: BSC DATA SCIENCE // UNITED INTERNATIONAL UNIVERSITY (UIU)</p>
-                <p>&gt; LOADING_SKILL_MATRIX... [PYTHON, SQL, POWER_BI, DOCKER, FASTAPI, PYTORCH, PANDAS]</p>
+                <p>&gt; LOADING_SKILL_MATRIX... [PYTHON, SQL, POSTGRESQL, LANGCHAIN, CREW_AI, N8N, DOCKER, POWER_BI, PANDAS, STREAMLIT, HUGGING_FACE]</p>
                 <p>&gt; CURRENT_OBJECTIVE: EXPLORING AI-POWERED DATA ANALYTICS &amp; AGENTIC SYSTEMS.</p>
               </div>
             </div>
