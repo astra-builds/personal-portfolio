@@ -2,24 +2,22 @@ import SectionActivation from "./SectionActivation";
 import TerminalText from "./TerminalText";
 import { useScrollActivation } from "@/hooks/useScrollActivation";
 
-const experiences = [
+const education = [
   {
-    period: "2024 — 2 MONTHS",
-    role: "Data Visualization Associate Intern",
-    org: "Saint_Louis_University",
-    clearance: "INTERN",
-    desc: "Worked on data visualization projects, creating insightful dashboards and visual reports to support research and decision-making processes using Python, SQL, and Power BI.",
+    period: "Nov 2025 — Dec 2029",
+    degree: "Bachelor's in Data Science",
+    institution: "United_International_University",
+    desc: "CGPA: 4.00/4.00 (as of 1st trimester). Active member of the UIU Data Science Club.",
   },
   {
-    period: "May 2026 — Present",
-    role: "Research Contributor",
-    org: "HumanJudge",
-    clearance: "CONTRACT",
-    desc: "Contributing to AI evaluation and human judgment research in San Francisco, CA (Remote).",
+    period: " — 2024",
+    degree: "High School Diploma, Science",
+    institution: "Adamjee_Cantonment_College",
+    desc: "Grade: 90.15% (GPA: 5.00/5.00). Section Representative at ACC Eco Amica Club. General Member at ACC Photography Club.",
   },
 ];
 
-const ExperienceSection = () => {
+const EducationSection = () => {
   const { ref, activated } = useScrollActivation(0.1);
 
   return (
@@ -29,29 +27,26 @@ const ExperienceSection = () => {
           <div className="flex items-center gap-3 mb-6">
             <span className="text-primary text-sm">▶</span>
             <h3 className="text-sm font-bold text-foreground uppercase tracking-widest">
-              <TerminalText text="Service_Record" activated={activated} delay={300} />
+              <TerminalText text="Academic_Record" activated={activated} delay={300} />
             </h3>
             <div className="h-[1px] flex-grow bg-primary/20" />
           </div>
 
           <div className="space-y-0">
-            {experiences.map((exp, i) => (
+            {education.map((edu, i) => (
               <div
                 key={i}
                 className="sa-card group border-l-2 border-primary/30 hover:border-primary pl-6 py-6 relative transition-colors duration-300"
               >
                 <div className="absolute left-[-5px] top-8 w-2 h-2 bg-primary/50 group-hover:bg-primary group-hover:shadow-[0_0_10px_hsl(1,93%,50%)] transition-all" />
                 <div className="flex flex-wrap items-center gap-3 mb-2">
-                  <span className="text-[10px] font-mono text-primary tracking-widest">{exp.period}</span>
-                  <span className="text-[10px] px-2 py-0.5 border border-primary/30 bg-primary/10 text-primary tracking-widest">
-                    {exp.clearance}
-                  </span>
+                  <span className="text-[10px] font-mono text-primary tracking-widest">{edu.period}</span>
                 </div>
                 <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
-                  {exp.role}
+                  {edu.degree}
                 </h4>
-                <p className="text-xs font-mono text-primary/60 mb-2">{exp.org}</p>
-                <p className="text-xs text-muted-foreground font-mono leading-relaxed">{exp.desc}</p>
+                <p className="text-xs font-mono text-primary/60 mb-2">{edu.institution}</p>
+                <p className="text-xs text-muted-foreground font-mono leading-relaxed">{edu.desc}</p>
               </div>
             ))}
           </div>
@@ -61,4 +56,4 @@ const ExperienceSection = () => {
   );
 };
 
-export default ExperienceSection;
+export default EducationSection;

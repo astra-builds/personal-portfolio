@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import EducationSection from "@/components/EducationSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import CommsSection from "@/components/CommsSection";
 import MarqueeStrip from "@/components/MarqueeStrip";
@@ -70,6 +71,7 @@ const Index = () => {
             <div id="projects"><ProjectsSection /></div>
             <div id="skills"><SkillsSection /></div>
             <div id="experience"><ExperienceSection /></div>
+            <div id="education"><EducationSection /></div>
             <div id="certifications"><CertificationsSection /></div>
             <div id="comms"><CommsSection /></div>
 
@@ -80,7 +82,7 @@ const Index = () => {
                 <div>Email: <span className="text-foreground">kamrul.hasan82747@gmail.com</span></div>
               </div>
               <div className="text-right space-y-1">
-                <div>Edu: <span className="text-foreground">UIU // BSc Data Science</span></div>
+                <div>Edu: <span className="text-foreground">UIU // CGPA 4.00</span></div>
                 <div>Core_Temp: <span className="text-emerald-500">OPTIMAL</span></div>
               </div>
             </div>
