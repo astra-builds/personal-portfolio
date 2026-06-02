@@ -9,6 +9,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import CommsSection from "@/components/CommsSection";
+import RecommendationsSection from "@/components/RecommendationsSection";
 import MarqueeStrip from "@/components/MarqueeStrip";
 import VerticalMarquee from "@/components/VerticalMarquee";
 import BootSequence from "@/components/BootSequence";
@@ -73,6 +74,7 @@ const Index = () => {
             <div id="experience"><ExperienceSection /></div>
             <div id="education"><EducationSection /></div>
             <div id="certifications"><CertificationsSection /></div>
+            <div id="recommendations"><RecommendationsSection /></div>
             <div id="comms"><CommsSection /></div>
 
             {/* Footer */}
